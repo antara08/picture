@@ -1,0 +1,25 @@
+ {% extends "base.html" %}
+
+{% block title %}
+Picture Uploader -- Welcome
+{% endblock %}
+
+
+{% block content%}
+	<article>
+        <header>
+            <h1></h1>
+            <p>Picture uploaded successfully</p>
+			<img src="{{url_for('send_image',filename=image_name)}}" style="width:504px;height:404px;">
+        </header>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+		<section>
+            <h3></h3>
+            <p></p>
+        </section>
+
+    </article>
+{% endblock %}
